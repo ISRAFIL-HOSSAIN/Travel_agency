@@ -1,12 +1,15 @@
 .CompactCard{
     display:flex;
-    flex:1;
-    height: 7rem!important;
+    flex:2;
+    height: 7rem;
     border-radius: 0.7rem;
     color:white;
     position: relative;
     cursor:pointer;
     padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 .CompactCard:hover{
     box-shadow:none !important;
@@ -52,4 +55,13 @@
 }
 .detail>span:nth-child(3){
     font-size: 12px;
+}
+
+
+@media screen and(max-width: 1200px){
+    .CompactCard{
+        
+        height: 7rem ;
+        padding: 1rem;
+    }
 }

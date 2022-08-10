@@ -4,7 +4,7 @@ import Cards from '../MulCards/Cards'
 const MainSection = () => {
   return (
     <div className='MainSection'>
-        <h1>Dashboard</h1>
+        <h1>  Dashboard </h1>
         <Cards/>
     </div>
   )

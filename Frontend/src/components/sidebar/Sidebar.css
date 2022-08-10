@@ -3,7 +3,7 @@
     display:flex;
     flex-direction: column;
     position: relative;
-    padding-top: 4rem;
+    padding-top: 3rem;
     transition:all 300ms ease;
 }
 .logo{
@@ -39,13 +39,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    height: 1.5rem;
+    height: 2.3rem;
     margin-left: 2rem;
     position: relative;
     color: rgba(245, 245, 245, 0.93);
     transition: all 300ms ease;
     font-size: 14px;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
 }
 .menuItem:hover{
     cursor:pointer;
@@ -66,4 +66,52 @@
     position:absolute;
     bottom: 1rem;
     width: 100%;
+}
+.bars{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .menuItem>span{
+        display: none;
+    }
+    .Sidebar{
+        width: 10rem;
+    }
+    .logo{
+        margin-left: 0rem;
+    }
+    .logo #logotext{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar{
+        position: fixed;
+        z-index: 9;
+        background:#44156b;
+        width: 45%;
+        padding-right: 1rem;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .menuItem>span{
+        display: block;
+    }
+    .logo{
+        display: flex;
+    }
+    .menu .menuItem:last-child{
+        position:relative;
+        margin-top:2rem;
+    }
+    .bars{
+        display: flex;
+        position:fixed;
+        top: 1rem;
+        z-index: 9;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
 }
